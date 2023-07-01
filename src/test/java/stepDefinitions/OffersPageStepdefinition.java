@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.testng.asserts.SoftAssert;
 import pageObjects.LandingPage;
 import pageObjects.OfferPage;
+import pageObjects.PageObjectManager;
 import utilities.ContextSetUp;
 
 import java.util.Iterator;
@@ -15,6 +16,7 @@ public class OffersPageStepdefinition
 {
     ContextSetUp context;
     public String offersSearchedResult;
+    public PageObjectManager pageObjectManager;
     public OffersPageStepdefinition(ContextSetUp context)
     {
         this.context=context;
@@ -22,16 +24,17 @@ public class OffersPageStepdefinition
     @Then("User searched with {string} short name on offers page to check if product exist")
     public void user_searched_on_OfferPage(String shortName)
     {
-        OfferPage op = new OfferPage(context.driver);
-        LandingPage lp = new LandingPage(context.driver);
-        lp.clickTopDeals();
+        pageObjectManager = new PageObjectManager(context.driver);
+        OfferPage offerPage = pageObjectManager.getOffersPage();
+        LandingPage landingPage = pageObjectManager.getlandingPage();
+        landingPage.clickTopDeals();
         Set<String> windows = context.driver.getWindowHandles();
         Iterator<String> it = windows.iterator();
         String parentWindow = it.next();
         String childwindow= it.next();
         context.driver.switchTo().window(childwindow);
-        op.setSearchKeyword(shortName);
-        offersSearchedResult= op.getProductName();
+        offerPage.setSearchKeyword(shortName);
+        offersSearchedResult= offerPage.getProductName();
         System.out.println(offersSearchedResult);
 
     }

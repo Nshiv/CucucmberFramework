@@ -21,9 +21,10 @@ public class LandingPage
         driver.findElement(searchBar).sendKeys(input);
     }
 
-    public void getProductName()
+    public String getProductName()
     {
-        driver.findElement(productName).getText().split(" ")[0].trim();
+        String name =driver.findElement(productName).getText().split(" ")[0].trim();
+        return name;
     }
 
     public void clickTopDeals()
