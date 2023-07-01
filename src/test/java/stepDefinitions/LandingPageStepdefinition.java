@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.asserts.SoftAssert;
+import pageObjects.LandingPage;
 import utilities.ContextSetUp;
 
 
@@ -33,7 +34,9 @@ public class LandingPageStepdefinition
     @When("User searched with short name {string} and extracted actual name of product")
     public void user_searched_landingScreen(String shortName) throws InterruptedException {
         System.out.println(shortName);
-        context.driver.findElement(By.xpath("//input[@type='search']")).sendKeys(shortName);
+        LandingPage lpage = new LandingPage(context.driver);
+        lpage.setSearchInput(shortName);
+        //context.driver.findElement(By.xpath("//input[@type='search']")).sendKeys(shortName);
         Thread.sleep(5000);
         landingProductName=context.driver.findElement(By.cssSelector("h4.product-name")).getText().split(" ")[0].trim();
         System.out.println(landingProductName);

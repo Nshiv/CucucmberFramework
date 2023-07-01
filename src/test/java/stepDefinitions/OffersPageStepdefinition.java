@@ -4,6 +4,7 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import org.openqa.selenium.By;
 import org.testng.asserts.SoftAssert;
+import pageObjects.OfferPage;
 import utilities.ContextSetUp;
 
 import java.util.Iterator;
@@ -20,14 +21,15 @@ public class OffersPageStepdefinition
     @Then("User searched with {string} short name on offers page to check if product exist")
     public void user_searched_on_OfferPage(String shortName)
     {
-        context.driver.findElement(By.xpath("//a[text()='Top Deals']")).click();
+        OfferPage op = new OfferPage(context.driver);
+        op.clickTopDeals();
         Set<String> windows = context.driver.getWindowHandles();
         Iterator<String> it = windows.iterator();
         String parentWindow = it.next();
         String childwindow= it.next();
         context.driver.switchTo().window(childwindow);
-        context.driver.findElement(By.xpath("//input[@type='search']")).sendKeys(shortName);
-        offersSearchedResult= context.driver.findElement(By.xpath("//td[normalize-space()='Tomato']")).getText();
+        op.setSearchKeyword(shortName);
+        offersSearchedResult= op.getProductName();
         System.out.println(offersSearchedResult);
 
     }
