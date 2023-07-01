@@ -14,6 +14,8 @@ public class LandingPage
     By searchBar = By.xpath("//input[@type='search']");
     By productName = By.cssSelector("h4.product-name");
 
+    By topDeals = By.xpath("//a[text()='Top Deals']");
+
     public void setSearchInput(String input)
     {
         driver.findElement(searchBar).sendKeys(input);
@@ -22,6 +24,11 @@ public class LandingPage
     public void getProductName()
     {
         driver.findElement(productName).getText().split(" ")[0].trim();
+    }
+
+    public void clickTopDeals()
+    {
+        driver.findElement(topDeals).click();
     }
 
 

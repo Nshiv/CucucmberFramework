@@ -10,15 +10,10 @@ public class OfferPage
     {
         this.driver= driver;
     }
-    By topDeals = By.xpath("//a[text()='Top Deals']");
     By searchOffer = By.xpath("//input[@type='search']");
 
     By productName = By.xpath("//td[normalize-space()='Tomato']");
 
-    public void clickTopDeals()
-    {
-        driver.findElement(topDeals).click();
-    }
 
     public void setSearchKeyword(String name)
     {

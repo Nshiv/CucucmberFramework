@@ -4,6 +4,7 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import org.openqa.selenium.By;
 import org.testng.asserts.SoftAssert;
+import pageObjects.LandingPage;
 import pageObjects.OfferPage;
 import utilities.ContextSetUp;
 
@@ -22,7 +23,8 @@ public class OffersPageStepdefinition
     public void user_searched_on_OfferPage(String shortName)
     {
         OfferPage op = new OfferPage(context.driver);
-        op.clickTopDeals();
+        LandingPage lp = new LandingPage(context.driver);
+        lp.clickTopDeals();
         Set<String> windows = context.driver.getWindowHandles();
         Iterator<String> it = windows.iterator();
         String parentWindow = it.next();
