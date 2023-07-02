@@ -21,7 +21,7 @@ public class OffersPageStepdefinition
     {
         this.context=context;
     }
-    @Then("User searched with {string} short name on offers page to check if product exist")
+    @Then("User searched with {} short name on offers page to check if product exist")
     public void user_searched_on_OfferPage(String shortName)
     {
         OfferPage offerPage = context.pageObjectManager.getOffersPage();

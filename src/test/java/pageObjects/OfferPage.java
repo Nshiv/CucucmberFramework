@@ -12,7 +12,7 @@ public class OfferPage
     }
     By searchOffer = By.xpath("//input[@type='search']");
 
-    By productName = By.xpath("//td[normalize-space()='Tomato']");
+    By productName = By.cssSelector("tbody tr td:nth-child(1)");
 
 
     public void setSearchKeyword(String name)

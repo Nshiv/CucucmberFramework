@@ -2,6 +2,7 @@ package utilities;
 
 import org.openqa.selenium.WebDriver;
 import pageObjects.PageObjectManager;
+import stepDefinitions.Hooks;
 
 import java.io.IOException;
 
@@ -14,9 +15,11 @@ public class ContextSetUp
 
     public TestBase testBase;
     public GenericUtils genericUtils;
-    public ContextSetUp() throws IOException {
-        TestBase testBase = new TestBase();
-        pageObjectManager=new PageObjectManager(testBase.WebDriverManager());
-        genericUtils = new GenericUtils(testBase.WebDriverManager());
+
+    public ContextSetUp() throws IOException
+    {
+        this.testBase = new TestBase();
+        this.pageObjectManager=new PageObjectManager(testBase.WebDriverManager());
+        this.genericUtils = new GenericUtils(testBase.WebDriverManager());
     }
 }

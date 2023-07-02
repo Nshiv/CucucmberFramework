@@ -31,7 +31,7 @@ public class LandingPageStepdefinition
 
     }
 
-    @When("User searched with short name {string} and extracted actual name of product")
+    @When("User searched with short name {} and extracted actual name of product")
     public void user_searched_landingScreen(String shortName) throws InterruptedException {
         LandingPage landingPage = context.pageObjectManager.getlandingPage();
         landingPage.setSearchInput(shortName);
@@ -39,10 +39,7 @@ public class LandingPageStepdefinition
         landingProductName=landingPage.getProductName();
         System.out.println(landingProductName);
 
-
     }
-
-
 
 
 }
