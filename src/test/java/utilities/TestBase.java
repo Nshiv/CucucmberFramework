@@ -11,19 +11,21 @@ import java.util.Properties;
 public class TestBase
 {
     public WebDriver driver;
-    public WebDriver WebDriverManager() throws IOException {
-        FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"src/test/resources/global.properties");
+    public WebDriver WebDriverManager() throws IOException
+    {
+        FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"/src/test/resources/global.properties");
         Properties prop = new Properties();
         prop.load(fis);
         String project_url=prop.getProperty("url");
         if(driver==null) {
-            if(prop.getProperty("browser")=="chrome")
+            if(prop.getProperty("browser").equalsIgnoreCase("chrome"))
             {
-                String path = "C:/Driver/chromedriver/chromedriver.exe";
-                System.setProperty("webdriver.chrome.driver", path);
+                String chromeDriverPath = getClass().getClassLoader().getResource("drivers/chromedriver").getPath();
+                System.out.println(chromeDriverPath);
+                System.setProperty("webdriver.chrome.driver", chromeDriverPath);
                 driver = new ChromeDriver();
             }
-            if(prop.getProperty("browser")=="firefox")
+            if(prop.getProperty("browser").equalsIgnoreCase("firefox"))
             {
                 //firefox
             }
