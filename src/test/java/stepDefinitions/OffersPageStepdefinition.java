@@ -24,15 +24,10 @@ public class OffersPageStepdefinition
     @Then("User searched with {string} short name on offers page to check if product exist")
     public void user_searched_on_OfferPage(String shortName)
     {
-        pageObjectManager = new PageObjectManager(context.driver);
-        OfferPage offerPage = pageObjectManager.getOffersPage();
-        LandingPage landingPage = pageObjectManager.getlandingPage();
+        OfferPage offerPage = context.pageObjectManager.getOffersPage();
+        LandingPage landingPage = context.pageObjectManager.getlandingPage();
         landingPage.clickTopDeals();
-        Set<String> windows = context.driver.getWindowHandles();
-        Iterator<String> it = windows.iterator();
-        String parentWindow = it.next();
-        String childwindow= it.next();
-        context.driver.switchTo().window(childwindow);
+        context.genericUtils.switchWindowToChild();
         offerPage.setSearchKeyword(shortName);
         offersSearchedResult= offerPage.getProductName();
         System.out.println(offersSearchedResult);
