@@ -1,5 +1,5 @@
 Feature: Product Search on Landing page and Offer page
-
+  @Regression
   Scenario Outline: Validate searched product with Offer page and Landing page
     Given User on GreenCart Landing page
     When Search with small name <name> and extracted actual name of product

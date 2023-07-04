@@ -20,7 +20,7 @@ public class TestBase
         if(driver==null) {
             if(prop.getProperty("browser").equalsIgnoreCase("chrome"))
             {
-                String chromeDriverPath = getClass().getClassLoader().getResource("drivers/chromedriver").getPath();
+                String chromeDriverPath = System.getProperty("user.dir")+"/src/test/resources/testDrivers/chromedriver";
                 System.out.println(chromeDriverPath);
                 System.setProperty("webdriver.chrome.driver", chromeDriverPath);
                 driver = new ChromeDriver();

@@ -5,9 +5,10 @@ import io.cucumber.testng.CucumberOptions;
 import org.testng.annotations.DataProvider;
 
 @CucumberOptions(glue = "stepDefinitions",
-        features = "src/test/java/features/search.feature",
-        monochrome = true
-
+        features = "src/test/java/features",
+        monochrome = true,
+        tags = "@Regression",
+        plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
 )
 public class Parrallaexecution extends AbstractTestNGCucumberTests
 {
