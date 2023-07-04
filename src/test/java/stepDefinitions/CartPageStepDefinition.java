@@ -33,10 +33,16 @@ public class CartPageStepDefinition
        tn.setCountry("India");
        tn.checkTnC();
        tn.clickProceedButton();
+   }
 
-
-
-
-
+   @Then("User should be able to place order successfully")
+   public void user_able_to_placeOrder()
+   {
+       CartPage cp=context.pageObjectManager.getCartPage();
+       cp.clickPlaceOrder();
+       TnCPage tn = context.pageObjectManager.getTnCPage();
+       tn.setCountry("India");
+       tn.checkTnC();
+       tn.clickProceedButton();
    }
 }

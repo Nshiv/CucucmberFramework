@@ -39,13 +39,29 @@ public class LandingPageStepdefinition
 
     @When("^Search with small name (.+) and extracted actual name of product$")
     public void user_searched_landingScreen(String shortName) throws InterruptedException {
-        LandingPage landingPage = context.pageObjectManager.getlandingPage();
-        landingPage.setSearchInput(shortName);
+        LandingPage lp = context.pageObjectManager.getlandingPage();
+        lp.setSearchInput(shortName);
         Thread.sleep(5000);
-        landingProductName=landingPage.getProductName();
+        landingProductName=lp.getProductName();
         System.out.println(landingProductName);
 
     }
 
+    @When("^User search products from search bar with keyword (.+)$")
+    public void user_searched_with_keywords(String input) throws InterruptedException {
+        LandingPage lp = context.pageObjectManager.getlandingPage();
+        lp.setSearchInput(input);
+        Thread.sleep(3000);
+    }
+
+    @And("Added all searched products to cart")
+    public void added_all_products_cart() throws InterruptedException {
+        LandingPage lp = context.pageObjectManager.getlandingPage();
+        lp.clickAddToCart();
+        lp.clickCartButton();
+        Thread.sleep(2000);
+        lp.clickCheckOut();
+        Thread.sleep(4000);
+    }
 
 }
