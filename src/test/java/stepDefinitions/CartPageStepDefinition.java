@@ -11,16 +11,17 @@ import utilities.ContextSetUp;
 public class CartPageStepDefinition
 {
     ContextSetUp context;
+    public CartPage cartPage;
     public  CartPageStepDefinition(ContextSetUp context)
     {
         this.context=context;
+        cartPage=context.pageObjectManager.getCartPage();
     }
 
    @Then("^User proceed to checkout and validate the (.+) items on checkout page$")
     public void user_added_products_to_cart(String name)
    {
-       CartPage cp=context.pageObjectManager.getCartPage();
-       String cartProduct = cp.getProductName();
+       String cartProduct = cartPage.getProductName();
        try {
            SoftAssert sa = new SoftAssert();
            sa.assertEquals(cartProduct,name);
@@ -28,7 +29,7 @@ public class CartPageStepDefinition
        {
            System.out.println("Validation Failed");
        }
-       cp.clickPlaceOrder();
+       cartPage.clickPlaceOrder();
        TnCPage tn = context.pageObjectManager.getTnCPage();
        tn.setCountry("India");
        tn.checkTnC();
@@ -38,8 +39,7 @@ public class CartPageStepDefinition
    @Then("User should be able to place order successfully")
    public void user_able_to_placeOrder()
    {
-       CartPage cp=context.pageObjectManager.getCartPage();
-       cp.clickPlaceOrder();
+       cartPage.clickPlaceOrder();
        TnCPage tn = context.pageObjectManager.getTnCPage();
        tn.setCountry("India");
        tn.checkTnC();
