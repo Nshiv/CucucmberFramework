@@ -16,6 +16,17 @@ public class LandingPage
 
     By topDeals = By.xpath("//a[text()='Top Deals']");
 
+    By addToCart = By.xpath("//button[normalize-space()='ADD TO CART']");
+
+    By cartButton = By.xpath("//img[@alt='Cart']");
+
+    By checkOutButton = By.xpath("//button[normalize-space()='PROCEED TO CHECKOUT']");
+
+    public void clickCheckOut()
+    {
+        driver.findElement(checkOutButton).click();
+    }
+
     public void setSearchInput(String input)
     {
         driver.findElement(searchBar).sendKeys(input);
@@ -32,5 +43,13 @@ public class LandingPage
         driver.findElement(topDeals).click();
     }
 
+   public void clickAddToCart()
+   {
+       driver.findElement(addToCart).click();
+   }
 
+   public void clickCartButton()
+   {
+       driver.findElement(cartButton).click();
+   }
 }

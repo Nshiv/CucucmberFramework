@@ -6,7 +6,9 @@ public class PageObjectManager
 {
     public LandingPage landingPage;
     public OfferPage offerPage;
+    public CartPage cartPage;
     public WebDriver driver;
+    public TnCPage tnc;
 
     public PageObjectManager(WebDriver driver)
     {
@@ -22,5 +24,17 @@ public class PageObjectManager
     {
        offerPage = new OfferPage(driver);
        return offerPage;
+    }
+
+    public CartPage getCartPage()
+    {
+       cartPage= new CartPage(driver) ;
+       return cartPage;
+    }
+
+    public TnCPage getTnCPage()
+    {
+        tnc = new TnCPage(driver);
+        return tnc;
     }
 }
