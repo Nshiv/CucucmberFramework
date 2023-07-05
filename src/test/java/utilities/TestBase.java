@@ -2,6 +2,9 @@ package utilities;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -17,17 +20,26 @@ public class TestBase
         Properties prop = new Properties();
         prop.load(fis);
         String project_url=prop.getProperty("url");
+        String browser_prop = prop.getProperty("browser");
+        String browser_maven = System.getProperty("browser");
+        String browser = browser_maven != null ? browser_maven:browser_prop;
         if(driver==null) {
-            if(prop.getProperty("browser").equalsIgnoreCase("chrome"))
+            if(browser.equalsIgnoreCase("chrome"))
             {
                 String chromeDriverPath = System.getProperty("user.dir")+"/src/test/resources/testDrivers/chromedriver";
                 System.out.println(chromeDriverPath);
                 System.setProperty("webdriver.chrome.driver", chromeDriverPath);
                 driver = new ChromeDriver();
             }
-            if(prop.getProperty("browser").equalsIgnoreCase("firefox"))
+           else if(browser.equalsIgnoreCase("edge"))
             {
-                //firefox
+                String edgeDriverPath = System.getProperty("user.dir")+"/src/test/resources/testDrivers/msedgedriver";
+                System.out.println(edgeDriverPath);
+                System.setProperty("webdriver.edge.driver",edgeDriverPath);
+                driver = new EdgeDriver();
+            }
+           else {
+                System.out.println("Invalid browser inputs"+browser);
             }
 
             driver.get(project_url);

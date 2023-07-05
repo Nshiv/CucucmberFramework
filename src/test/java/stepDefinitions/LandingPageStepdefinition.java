@@ -18,6 +18,12 @@ public class LandingPageStepdefinition
 
     }
 
+    @Given("User on GreenCart Landing screen")
+    public void user_on_green_cart_landing_screen()
+    {
+
+    }
+
     @When("^User searched with short name (.+)$")
     public void user_searchedwith_name(String name) throws InterruptedException {
         LandingPage lp = context.pageObjectManager.getlandingPage();

@@ -4,7 +4,7 @@ Feature: Product Search and place order
   So that I can find the desired product
   and able to place order.
 
-  @Regression
+  @smoke
   Scenario Outline: Search product and place an order from landing screen
     Given User on GreenCart Landing page
     When User searched with short name <name>
