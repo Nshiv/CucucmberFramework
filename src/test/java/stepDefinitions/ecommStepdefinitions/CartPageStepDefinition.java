@@ -1,11 +1,9 @@
-package stepDefinitions;
+package stepDefinitions.ecommStepdefinitions;
 
-import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
-import org.testng.Assert;
 import org.testng.asserts.SoftAssert;
-import pageObjects.CartPage;
-import pageObjects.TnCPage;
+import pageObjects.ecommPageObjects.CartPage;
+import pageObjects.ecommPageObjects.TnCPage;
 import utilities.ContextSetUp;
 
 public class CartPageStepDefinition

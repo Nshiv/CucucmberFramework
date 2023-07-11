@@ -1,8 +1,7 @@
 package utilities;
 
 import org.openqa.selenium.WebDriver;
-import pageObjects.PageObjectManager;
-import stepDefinitions.Hooks;
+import pageObjects.ecommPageObjects.PageObjectManager;
 
 import java.io.IOException;
 

@@ -1,16 +1,12 @@
-package stepDefinitions;
+package stepDefinitions.ecommStepdefinitions;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
-import org.openqa.selenium.By;
 import org.testng.asserts.SoftAssert;
-import pageObjects.LandingPage;
-import pageObjects.OfferPage;
-import pageObjects.PageObjectManager;
+import pageObjects.ecommPageObjects.LandingPage;
+import pageObjects.ecommPageObjects.OfferPage;
+import pageObjects.ecommPageObjects.PageObjectManager;
 import utilities.ContextSetUp;
-
-import java.util.Iterator;
-import java.util.Set;
 
 public class OffersPageStepdefinition
 {

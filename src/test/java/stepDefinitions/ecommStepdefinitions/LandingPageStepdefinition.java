@@ -1,7 +1,7 @@
-package stepDefinitions;
+package stepDefinitions.ecommStepdefinitions;
 
 import io.cucumber.java.en.*;
-import pageObjects.LandingPage;
+import pageObjects.ecommPageObjects.LandingPage;
 import utilities.ContextSetUp;
 public class LandingPageStepdefinition
 {

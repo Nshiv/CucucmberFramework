@@ -1,6 +1,7 @@
-package pageObjects;
+package pageObjects.ecommPageObjects;
 
 import org.openqa.selenium.WebDriver;
+import pageObjects.practiceWebPageObjects.RadioButtonElements;
 
 public class PageObjectManager
 {
@@ -9,6 +10,7 @@ public class PageObjectManager
     public CartPage cartPage;
     public WebDriver driver;
     public TnCPage tnc;
+    public RadioButtonElements radioButtonElements;
 
     public PageObjectManager(WebDriver driver)
     {
@@ -36,5 +38,11 @@ public class PageObjectManager
     {
         tnc = new TnCPage(driver);
         return tnc;
+    }
+
+    public RadioButtonElements getRadioButtonElements()
+    {
+        radioButtonElements=new RadioButtonElements(driver);
+        return radioButtonElements;
     }
 }

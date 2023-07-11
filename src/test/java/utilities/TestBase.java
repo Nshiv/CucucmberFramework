@@ -36,6 +36,7 @@ public class TestBase
                 String edgeDriverPath = System.getProperty("user.dir")+"/src/test/resources/testDrivers/msedgedriver";
                 System.out.println(edgeDriverPath);
                 System.setProperty("webdriver.edge.driver",edgeDriverPath);
+
                 driver = new EdgeDriver();
             }
            else {
