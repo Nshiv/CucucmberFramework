@@ -11,7 +11,6 @@ import utilities.ContextSetUp;
 
 public class LogoStepDefinition
 {
-    WebDriver driver;
     public ContextSetUp contextSetUp;
     public LogoHomePage logoHomePage;
 
