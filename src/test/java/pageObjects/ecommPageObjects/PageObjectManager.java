@@ -1,6 +1,7 @@
 package pageObjects.ecommPageObjects;
 
 import org.openqa.selenium.WebDriver;
+import pageObjects.practiceWebPageObjects.LogoHomePage;
 import pageObjects.practiceWebPageObjects.RadioButtonElements;
 
 public class PageObjectManager
@@ -10,6 +11,7 @@ public class PageObjectManager
     public CartPage cartPage;
     public WebDriver driver;
     public TnCPage tnc;
+    public LogoHomePage logoHomePage;
     public RadioButtonElements radioButtonElements;
 
     public PageObjectManager(WebDriver driver)
@@ -44,5 +46,10 @@ public class PageObjectManager
     {
         radioButtonElements=new RadioButtonElements(driver);
         return radioButtonElements;
+    }
+    public LogoHomePage getLogoHomePage()
+    {
+        logoHomePage = new LogoHomePage(driver);
+        return logoHomePage;
     }
 }

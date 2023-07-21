@@ -1,4 +1,4 @@
-package stepDefinitions.ecommStepdefinitions;
+package cucumberHooks;
 import io.cucumber.java.After;
 import io.cucumber.java.AfterStep;
 import io.cucumber.java.Scenario;

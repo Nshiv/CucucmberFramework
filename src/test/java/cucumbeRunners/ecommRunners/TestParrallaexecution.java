@@ -4,7 +4,7 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 import org.testng.annotations.DataProvider;
 
-@CucumberOptions(glue = "stepDefinitions/ecommStepdefinitions",
+@CucumberOptions(glue = {"stepDefinitions/ecommStepdefinitions","cucumberHooks"},
         features = "src/test/java/features/ecommFeatures",
         monochrome = true,
         tags = "@smoke",
