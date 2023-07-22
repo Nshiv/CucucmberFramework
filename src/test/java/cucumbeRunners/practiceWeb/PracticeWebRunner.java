@@ -7,7 +7,7 @@ import io.cucumber.testng.CucumberOptions;
         glue = {"stepDefinitions/practiceWebStepDefinition","cucumberHooks"},
         features = "src/test/java/features/practiceWebsite",
         monochrome = true,
-        tags="@wip"
+        tags="@Search"
 )
 
 public class PracticeWebRunner extends AbstractTestNGCucumberTests

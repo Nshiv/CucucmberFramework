@@ -17,6 +17,7 @@ public class LogoStepDefinition
     public LogoStepDefinition(ContextSetUp contextSetUp)
     {
         this.contextSetUp=contextSetUp;
+        logoHomePage=contextSetUp.pageObjectManager.getLogoHomePage();
     }
     SoftAssert sa = new SoftAssert();
 
@@ -24,7 +25,6 @@ public class LogoStepDefinition
     @Given("User is on HomePage with {string}")
     public void navigateToHomePage(String title)
     {
-        //logoHomePage=contextSetUp.pageObjectManager.getLogoHomePage();
         String actual =logoHomePage.getPageTitle();
         sa.assertEquals(actual.toLowerCase().trim(),title.toLowerCase().trim());
         System.out.println("Actual is : "+ actual+" Expected is "+ title);
@@ -33,7 +33,6 @@ public class LogoStepDefinition
     @When("User browse header section of page")
     public boolean is_logo_present()
     {
-        //logoHomePage=contextSetUp.pageObjectManager.getLogoHomePage();
         boolean status =logoHomePage.logoImageStatus();
         return status;
     }
@@ -41,7 +40,6 @@ public class LogoStepDefinition
     @Then("Company logo should be present")
     public void validate_logo_status_on_homepage()
     {
-        logoHomePage=contextSetUp.pageObjectManager.getLogoHomePage();
         sa.assertTrue(is_logo_present());
     }
 

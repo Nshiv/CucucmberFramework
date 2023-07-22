@@ -3,6 +3,7 @@ package pageObjects.ecommPageObjects;
 import org.openqa.selenium.WebDriver;
 import pageObjects.practiceWebPageObjects.LogoHomePage;
 import pageObjects.practiceWebPageObjects.RadioButtonElements;
+import pageObjects.practiceWebPageObjects.SelectCountries;
 
 public class PageObjectManager
 {
@@ -13,6 +14,7 @@ public class PageObjectManager
     public TnCPage tnc;
     public LogoHomePage logoHomePage;
     public RadioButtonElements radioButtonElements;
+    public SelectCountries selectCountries;
 
     public PageObjectManager(WebDriver driver)
     {
@@ -51,5 +53,11 @@ public class PageObjectManager
     {
         logoHomePage = new LogoHomePage(driver);
         return logoHomePage;
+    }
+
+    public SelectCountries getSelectCountries()
+    {
+        selectCountries= new SelectCountries(driver);
+        return selectCountries;
     }
 }

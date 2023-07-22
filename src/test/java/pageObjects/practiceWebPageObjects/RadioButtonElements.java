@@ -14,10 +14,10 @@ public RadioButtonElements(WebDriver driver)
     this.driver=driver;
 }
 
-By radioButton = By.xpath("//input[@value='radio1']");
-By allRadioButtons = By.xpath("//input[@name='radioButton']");
+private By radioButton = By.xpath("//input[@value='radio1']");
+private By allRadioButtons = By.xpath("//input[@name='radioButton']");
 
-By radiobuttonHeading = By.xpath("//legend[text()='Radio Button Example']");
+private By radiobuttonHeading = By.xpath("//legend[text()='Radio Button Example']");
 
 public void clickRadioButton()
 {
