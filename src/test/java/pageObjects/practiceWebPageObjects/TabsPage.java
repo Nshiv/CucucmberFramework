@@ -51,4 +51,9 @@ public class TabsPage
         String currentURL = driver.getCurrentUrl();
         return currentURL;
     }
+
+    public void clickOnTabsButton()
+    {
+        driver.findElement(tabsButton).click();
+    }
 }
