@@ -16,6 +16,7 @@ public class PageObjectManager
     public DropDown dropdown;
     public BrowserWindow browserWindow;
     public TabsPage tabsPage;
+    public IframePage iframePage;
 
     public PageObjectManager(WebDriver driver)
     {
@@ -77,5 +78,11 @@ public class PageObjectManager
     {
         tabsPage= new TabsPage(driver);
         return tabsPage;
+    }
+
+    public IframePage getIframePage()
+    {
+        iframePage= new IframePage(driver);
+        return iframePage;
     }
 }
