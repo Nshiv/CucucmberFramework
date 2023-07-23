@@ -11,7 +11,7 @@ Feature: Select and Deselect values from drodown values on homepage
     When User select dropdown value of last index
     Then Validate the last value selected
 
-  @wip
+
   Scenario: Select a dropdown value and deselct
     When User select a dropdown value by value
     And  User deselect selected value
