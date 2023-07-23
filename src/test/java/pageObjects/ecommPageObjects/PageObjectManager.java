@@ -1,6 +1,7 @@
 package pageObjects.ecommPageObjects;
 
 import org.openqa.selenium.WebDriver;
+import pageObjects.practiceWebPageObjects.DropDown;
 import pageObjects.practiceWebPageObjects.LogoHomePage;
 import pageObjects.practiceWebPageObjects.RadioButtonElements;
 import pageObjects.practiceWebPageObjects.SelectCountries;
@@ -15,6 +16,7 @@ public class PageObjectManager
     public LogoHomePage logoHomePage;
     public RadioButtonElements radioButtonElements;
     public SelectCountries selectCountries;
+    public DropDown dropdown;
 
     public PageObjectManager(WebDriver driver)
     {
@@ -59,5 +61,11 @@ public class PageObjectManager
     {
         selectCountries= new SelectCountries(driver);
         return selectCountries;
+    }
+
+    public DropDown getDropdown()
+    {
+        dropdown=new DropDown(driver);
+        return dropdown;
     }
 }

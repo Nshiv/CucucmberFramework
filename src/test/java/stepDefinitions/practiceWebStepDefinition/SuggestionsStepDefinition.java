@@ -10,12 +10,12 @@ import org.testng.asserts.SoftAssert;
 import pageObjects.practiceWebPageObjects.SelectCountries;
 import utilities.ContextSetUp;
 
-public class DropdownHandlingStepDef
+public class SuggestionsStepDefinition
 {
     public ContextSetUp contextSetUp;
     public SelectCountries selectCountries;
     SoftAssert sa = new SoftAssert();
-    public DropdownHandlingStepDef(ContextSetUp contextSetUp)
+    public SuggestionsStepDefinition(ContextSetUp contextSetUp)
     {
         this.contextSetUp=contextSetUp;
         selectCountries=contextSetUp.pageObjectManager.getSelectCountries();
