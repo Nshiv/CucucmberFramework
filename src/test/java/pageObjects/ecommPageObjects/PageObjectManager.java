@@ -18,6 +18,8 @@ public class PageObjectManager
     public TabsPage tabsPage;
     public IframePage iframePage;
 
+    public MouseHoverPage mouseHoverPage;
+
     public PageObjectManager(WebDriver driver)
     {
        this.driver= driver;
@@ -84,5 +86,11 @@ public class PageObjectManager
     {
         iframePage= new IframePage(driver);
         return iframePage;
+    }
+
+    public MouseHoverPage getMouseHoverPage()
+    {
+        mouseHoverPage= new MouseHoverPage(driver);
+        return  mouseHoverPage;
     }
 }
