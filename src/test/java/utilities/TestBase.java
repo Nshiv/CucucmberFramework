@@ -32,6 +32,7 @@ public class TestBase
                 System.setProperty("webdriver.chrome.driver", chromeDriverPath);
                 driver = new ChromeDriver();
                 driver.manage().timeouts().implicitlyWait(5000, TimeUnit.SECONDS);
+                driver.manage().window().maximize();
             }
            else if(browser.equalsIgnoreCase("edge"))
             {

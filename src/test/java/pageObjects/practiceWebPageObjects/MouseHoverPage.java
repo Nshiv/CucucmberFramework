@@ -21,7 +21,6 @@ public MouseHoverPage(WebDriver driver)
 {
     this.driver= driver;
 }
-
 // elements
 By mouseHover = By.xpath("//button[@id='mousehover']");
 
@@ -30,16 +29,11 @@ By mouseHouseDropLIst = By.xpath("//div[@class='mouse-hover-content']/a");
 
 // actions or methods
 
- public void performMouseHover(WebElement element)
+ public void performMouseHover()
  {
-     Actions actions = new Actions(driver);
+     WebElement element = driver.findElement(mouseHover);
+    Actions actions = new Actions(driver);
      actions.moveToElement(element).perform();
- }
-
- public void moveToButton()
- {
-     WebElement button =driver.findElement(mouseHover);
-     performMouseHover(button);
  }
 
  public List<String> getListofMouseHoverElement()
@@ -68,5 +62,7 @@ public void waitForElementToClick()
     Duration duration = Duration.ofSeconds(10);
     webDriverWaitUtils.waitForElementToBeClickable(dropValues,duration);
 }
+
+
 
 }

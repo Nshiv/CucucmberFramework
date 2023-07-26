@@ -14,11 +14,14 @@ public class ContextSetUp
 
     public TestBase testBase;
     public GenericUtils genericUtils;
+    public WebDriverWaitUtils webDriverWaitUtils;
 
     public ContextSetUp() throws IOException
     {
         this.testBase = new TestBase();
         this.pageObjectManager=new PageObjectManager(testBase.WebDriverManager());
         this.genericUtils = new GenericUtils(testBase.WebDriverManager());
+        this.webDriverWaitUtils= new WebDriverWaitUtils(driver);
+
     }
 }
