@@ -1,3 +1,4 @@
+/*
 package cucumbeRunners.ecommRunners;
 
 import io.cucumber.testng.AbstractTestNGCucumberTests;
@@ -22,3 +23,4 @@ public class TestParrallaexecution extends AbstractTestNGCucumberTests
     }
 
 }
+*/

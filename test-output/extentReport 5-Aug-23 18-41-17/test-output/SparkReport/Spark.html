@@ -1,0 +1,1054 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title></title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary"></span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Aug 5, 2023 06:41:16 PM</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@smoke</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Select and Deselect values from drodown values on homepage</p>
+            <p class="text-sm">
+              <span>6:41:17 PM</span> / <span>00:00:19:527</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Select and Deselect values from drodown values on homepage</h5>
+<span class='badge badge-success'>08.05.2023 6:41:17 PM</span>
+<span class='badge badge-danger'>08.05.2023 6:41:37 PM</span>
+<span class='badge badge-default'>00:00:19:527</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Select first dropdown value from dropdown list</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.practiceWebStepDefinition.DropDownStepDefinition.select_value_from_dropdown_withValue(int)">
+                <span>When User select first dropdown value by Index 1</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.practiceWebStepDefinition.DropDownStepDefinition.validate_selected_value()">
+                <span>Then Corresponding value should be selected</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="9"><span class="badge log pass-bg mr-2">Pass</span>Select last dropdown value from dropdown list</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.practiceWebStepDefinition.DropDownStepDefinition.select_last_dropdown_value()">
+                <span>When User select dropdown value of last index</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.practiceWebStepDefinition.DropDownStepDefinition.validate_last_selected_value()">
+                <span>Then Validate the last value selected</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="16"><span class="badge log pass-bg mr-2">Pass</span>Select a dropdown value and deselct</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.practiceWebStepDefinition.DropDownStepDefinition.select_droplist_byValue()">
+                <span>When User select a dropdown value by value</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.practiceWebStepDefinition.DropDownStepDefinition.deselect_dropdown_withSelectedValue()">
+                <span>And User deselect selected value</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.practiceWebStepDefinition.DropDownStepDefinition.validate_current_state_of_dropList()">
+                <span>Then Validate droplist values should not be selected</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="25"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Handling iframes</p>
+            <p class="text-sm">
+              <span>6:41:37 PM</span> / <span>00:00:05:414</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Handling iframes</h5>
+<span class='badge badge-success'>08.05.2023 6:41:37 PM</span>
+<span class='badge badge-danger'>08.05.2023 6:41:42 PM</span>
+<span class='badge badge-default'>00:00:05:414</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=25</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="26"><span class="badge log pass-bg mr-2">Pass</span>Navigate to iframe and perform an action</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.practiceWebStepDefinition.IframeStepDefinition.user_navigates_to_iframe()">
+                <span>When User navigate to iframe</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.practiceWebStepDefinition.IframeStepDefinition.validate_logo_on_iframe()">
+                <span>Then Get validate the logo present on frame</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.practiceWebStepDefinition.IframeStepDefinition.navigate_back_to_main_page()">
+                <span>And Navigate back to main Homepage</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="35"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">company logo on Homepage of application</p>
+            <p class="text-sm">
+              <span>6:41:42 PM</span> / <span>00:00:05:496</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">company logo on Homepage of application</h5>
+<span class='badge badge-success'>08.05.2023 6:41:42 PM</span>
+<span class='badge badge-danger'>08.05.2023 6:41:48 PM</span>
+<span class='badge badge-default'>00:00:05:496</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=35</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="36"><span class="badge log pass-bg mr-2">Pass</span>Logo on homepage</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.practiceWebStepDefinition.LogoStepDefinition.navigateToHomePage(java.lang.String)">
+                <span>Given User is on HomePage with "Practice Page"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.practiceWebStepDefinition.LogoStepDefinition.is_logo_present()">
+                <span>When User browse header section of page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.practiceWebStepDefinition.LogoStepDefinition.validate_logo_status_on_homepage()">
+                <span>Then Company logo should be present</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="45"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">mouse Hover flow</p>
+            <p class="text-sm">
+              <span>6:41:48 PM</span> / <span>00:00:08:424</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">mouse Hover flow</h5>
+<span class='badge badge-success'>08.05.2023 6:41:48 PM</span>
+<span class='badge badge-danger'>08.05.2023 6:41:56 PM</span>
+<span class='badge badge-default'>00:00:08:424</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=45</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="46"><span class="badge log pass-bg mr-2">Pass</span>Get displayed elements on mouse hover</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.practiceWebStepDefinition.MouseHouverStepdef.user_perform_mouse_hover()">
+                <span>When User mouse hover on elements</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.practiceWebStepDefinition.MouseHouverStepdef.getElements_list()">
+                <span>Then Get list of elements displays</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="53"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Radio button events on Landing page</p>
+            <p class="text-sm">
+              <span>6:41:56 PM</span> / <span>00:00:16:252</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Radio button events on Landing page</h5>
+<span class='badge badge-success'>08.05.2023 6:41:56 PM</span>
+<span class='badge badge-danger'>08.05.2023 6:42:12 PM</span>
+<span class='badge badge-default'>00:00:16:252</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=53</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="54"><span class="badge log pass-bg mr-2">Pass</span>Check selected Radio button on screen</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.practiceWebStepDefinition.practiceStepDefinitions.user_on_practiceLandingScreen()">
+                <span>Given User is on Practice Landing Page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.practiceWebStepDefinition.practiceStepDefinitions.user_clicks_firstRadiobutton()">
+                <span>When User click on first radio button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.practiceWebStepDefinition.practiceStepDefinitions.selected_radioButton_validation()">
+                <span>Then Radio button should be selected</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="63"><span class="badge log pass-bg mr-2">Pass</span>Get all radiobutton count on screen</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.practiceWebStepDefinition.practiceStepDefinitions.user_on_practiceLandingScreen()">
+                <span>Given User is on Practice Landing Page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.practiceWebStepDefinition.practiceStepDefinitions.user_get_list_of_allRadiobuttons()">
+                <span>When User get all displayed list of radio buttons on page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.practiceWebStepDefinition.practiceStepDefinitions.validate_approved_radioButtons_count()">
+                <span>Then All approved Radio buttons should be on screen</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="72"><span class="badge log pass-bg mr-2">Pass</span>Match Radio button heading texts</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="73"><span class="badge log pass-bg mr-2">Pass</span>Match Radio button heading texts</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User is on Practice Landing Page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User get radio button heading texts on screen</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Text should be mached with Radio Button Example</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="82"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Select country from the list of countries on typing</p>
+            <p class="text-sm">
+              <span>6:42:12 PM</span> / <span>00:00:07:642</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Select country from the list of countries on typing</h5>
+<span class='badge badge-success'>08.05.2023 6:42:12 PM</span>
+<span class='badge badge-danger'>08.05.2023 6:42:20 PM</span>
+<span class='badge badge-default'>00:00:07:642</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=82</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="83"><span class="badge log fail-bg mr-2">Fail</span>Select a search input from a dropdown list</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.practiceWebStepDefinition.SuggestionsStepDefinition.user_is_on_homePage(java.lang.String)">
+                <span>Given User is on Homepage with title "Practice Page"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.practiceWebStepDefinition.SuggestionsStepDefinition.user_type_search_input_chars(java.lang.String)">
+                <span>When User type first three letter of country name as "In"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.practiceWebStepDefinition.SuggestionsStepDefinition.select_country_from_dropdownList(java.lang.String)">
+                <span>Then Select country "India" from dropdown list</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="stepDefinitions.practiceWebStepDefinition.SuggestionsStepDefinition.validate_correct_country_selected()">
+                <span>And Selected country should be display in search bar</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError: expected [india] but found [bahrain]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at stepDefinitions.practiceWebStepDefinition.SuggestionsStepDefinition.validate_correct_country_selected(SuggestionsStepDefinition.java:46)
+	at ✽.Selected country should be display in search bar(file:///D:/cucumberFramework/src/test/java/features/practiceWebsite/suggestions.feature:8)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>cucumberHooks.Hooks.addScreenShot(io.cucumber.java.Scenario)</span>
+      <div>image
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./screenshots/embedded1.png' src="./screenshots/embedded1.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="94"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Handle multiple opened tabs</p>
+            <p class="text-sm">
+              <span>6:42:20 PM</span> / <span>00:00:09:740</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Handle multiple opened tabs</h5>
+<span class='badge badge-success'>08.05.2023 6:42:20 PM</span>
+<span class='badge badge-danger'>08.05.2023 6:42:30 PM</span>
+<span class='badge badge-default'>00:00:09:740</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=94</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="95"><span class="badge log pass-bg mr-2">Pass</span>Navigate to opened tab and get the url</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.practiceWebStepDefinition.TabsStepDefinition.user_opened_newTab()">
+                <span>When User click on open tab button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.practiceWebStepDefinition.TabsStepDefinition.switch_to_openedTabHandle()">
+                <span>Then User navigate to opened tab</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.practiceWebStepDefinition.TabsStepDefinition.validate_url_title_ofTab()">
+                <span>And Validate the URL and Title of the tab</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.practiceWebStepDefinition.TabsStepDefinition.navigate_back_to_main_tab()">
+                <span>And Navigate Back to main tab</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="106"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Handle multiple opened windows</p>
+            <p class="text-sm">
+              <span>6:42:30 PM</span> / <span>00:00:09:934</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Handle multiple opened windows</h5>
+<span class='badge badge-success'>08.05.2023 6:42:30 PM</span>
+<span class='badge badge-danger'>08.05.2023 6:42:40 PM</span>
+<span class='badge badge-default'>00:00:09:934</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=106</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="107"><span class="badge log pass-bg mr-2">Pass</span>Navigate to opened window and get the logo validation</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.practiceWebStepDefinition.HandleWindowStepDef.user_click_on_openWindowHanlde_Button()">
+                <span>When User click on open window button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.practiceWebStepDefinition.HandleWindowStepDef.switch_to_child_window()">
+                <span>Then User switched to opened child window</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.practiceWebStepDefinition.HandleWindowStepDef.validate_title_andUrl()">
+                <span>And Validate the URL and Title of the window</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.practiceWebStepDefinition.HandleWindowStepDef.navigate_to_parentwindow()">
+                <span>And Navigate Back to Parent Window</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">java.lang.AssertionError</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.AssertionError</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:42:19 PM</td>
+<td>
+<a href="#" class="linked" test-id='82' id='90'>And Selected country should be display in search bar</a>
+<div class="">
+<span class="badge badge-default">Select country from the list of countries on typing.Select a search input from a dropdown list.And Selected country should be display in search bar</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>11</span>
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@smoke</p>
+<p class="duration text-sm">12 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@smoke</h4>
+<span status="pass" class='badge log pass-bg'>11 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:41:17 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Select first dropdown value from dropdown list</a>
+<div class="">
+<span class="badge badge-default">Select and Deselect values from drodown values on homepage.Select first dropdown value from dropdown list</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:41:24 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='9'>Select last dropdown value from dropdown list</a>
+<div class="">
+<span class="badge badge-default">Select and Deselect values from drodown values on homepage.Select last dropdown value from dropdown list</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:41:30 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='16'>Select a dropdown value and deselct</a>
+<div class="">
+<span class="badge badge-default">Select and Deselect values from drodown values on homepage.Select a dropdown value and deselct</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:41:37 PM</td>
+<td>
+<a href="#" class="linked" test-id='25' id='26'>Navigate to iframe and perform an action</a>
+<div class="">
+<span class="badge badge-default">Handling iframes.Navigate to iframe and perform an action</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:41:42 PM</td>
+<td>
+<a href="#" class="linked" test-id='35' id='36'>Logo on homepage</a>
+<div class="">
+<span class="badge badge-default">company logo on Homepage of application.Logo on homepage</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:41:48 PM</td>
+<td>
+<a href="#" class="linked" test-id='45' id='46'>Get displayed elements on mouse hover</a>
+<div class="">
+<span class="badge badge-default">mouse Hover flow.Get displayed elements on mouse hover</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:41:56 PM</td>
+<td>
+<a href="#" class="linked" test-id='53' id='54'>Check selected Radio button on screen</a>
+<div class="">
+<span class="badge badge-default">Radio button events on Landing page.Check selected Radio button on screen</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:42:02 PM</td>
+<td>
+<a href="#" class="linked" test-id='53' id='63'>Get all radiobutton count on screen</a>
+<div class="">
+<span class="badge badge-default">Radio button events on Landing page.Get all radiobutton count on screen</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:42:08 PM</td>
+<td>
+<a href="#" class="linked" test-id='53' id='73'>Match Radio button heading texts</a>
+<div class="">
+<span class="badge badge-default">Radio button events on Landing page.Match Radio button heading texts</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:42:12 PM</td>
+<td>
+<a href="#" class="linked" test-id='82' id='83'>Select a search input from a dropdown list</a>
+<div class="">
+<span class="badge badge-default">Select country from the list of countries on typing.Select a search input from a dropdown list</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:42:20 PM</td>
+<td>
+<a href="#" class="linked" test-id='94' id='95'>Navigate to opened tab and get the url</a>
+<div class="">
+<span class="badge badge-default">Handle multiple opened tabs.Navigate to opened tab and get the url</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:42:30 PM</td>
+<td>
+<a href="#" class="linked" test-id='106' id='107'>Navigate to opened window and get the logo validation</a>
+<div class="">
+<span class="badge badge-default">Handle multiple opened windows.Navigate to opened window and get the logo validation</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Aug 5, 2023 06:41:16 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Aug 5, 2023 06:42:40 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>7</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>1</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='87%'>
+<b>7</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='12%'><b>1</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='91%'><b>11</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='8%'><b>1</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='97%'><b>36</b> steps passed</small></div>
+<div>
+<small data-tooltip='2%'><b>1</b> steps failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Select and Deselect values from drodown values on homepage":19.527,"Handling iframes":5.414,"company logo on Homepage of application":5.496,"mouse Hover flow":8.424,"Radio button events on Landing page":16.252,"Select country from the list of countries on typing":7.642,"Handle multiple opened tabs":9.74,"Handle multiple opened windows":9.934
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@smoke</td>
+<td>11</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>91.667%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 7,
+failParent: 1,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 11,
+failChild: 1,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 36,
+failGrandChild: 1,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

@@ -7,7 +7,8 @@ import io.cucumber.testng.CucumberOptions;
         glue = {"stepDefinitions/practiceWebStepDefinition","cucumberHooks"},
         features = "src/test/java/features/practiceWebsite",
         monochrome = true,
-        tags="@smoke"
+        tags="@smoke",
+        plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:","rerun:target/failed_scenarios.txt"}
 )
 
 public class PracticeWebRunner extends AbstractTestNGCucumberTests
