@@ -34,7 +34,7 @@ public class TabsStepDefinition
     public void validate_url_title_ofTab()
     {
         String expectedTitle = "QAClick Academy - A Testing Academy to Learn, Earn and Shine";
-        String expectedURL ="https://www.qaclickacademy.com/";
+        String expectedURL ="https://www.qaclickacademy.co";
         Assert.assertEquals(tabsPage.getTitle().toLowerCase().trim(),expectedTitle.toLowerCase().trim());
         Assert.assertEquals(tabsPage.getUrl().trim(),expectedURL.trim());
     }
