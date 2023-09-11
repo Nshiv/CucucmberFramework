@@ -8,10 +8,7 @@ import java.io.IOException;
 public class ContextSetUp
 {
     public WebDriver driver;
-    public String landingProductName;
-
     public PageObjectManager pageObjectManager;
-
     public TestBase testBase;
     public GenericUtils genericUtils;
     public WebDriverWaitUtils webDriverWaitUtils;
